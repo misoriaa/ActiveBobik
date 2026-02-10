@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Корзина</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Irish+Grover&display=swap" rel="stylesheet">
+</head>
+
+<body>    
+    <header>
+        <div class="header-container">
+            <div class="logo-text">
+                <a href="../main_page/main.html"><img src="../img/logo.svg" alt=""></a>
+                <p>ActiveBobic</p>
+            </div>
+            <div class="header-links">
+                <div class="links">
+                    <a href="../catalog/catalog.html">Каталог</a>
+                    <a href="#">Админ панель</a>
+                    <a href="../about/about.html">О нас</a>
+                    <a href="../contacts/contacts.html">Контакты</a>
+                </div>
+                <div class="icons">
+                    <a href="../like/like.html"><img src="../img/header-like.svg" alt=""></a>
+                    <a href="../basket/basket.html"><img src="../img/header-basket.svg" alt=""></a>
+                    <a href="../profile/profile.html"><img src="../img/header-profile.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="basket-title">
+            <h1>Корзина</h1>
+        </div>
+
+        <div class="basket-grid">
+            <div class="basket-grid_left-side">
+                <div class="basket-block_way-of-reception" onclick="toggleReception()">
+                    <div class="left">
+                        <h6 id="reception-title">Способ получения</h6>
+                        <p id="reception-desc">Доставка на адрес или самовывозом из магазина</p>
+                    </div>
+
+                    <div class="right">
+                        <img src="../img/basket-arrow-choose.svg">
+                    </div>
+                </div>
+
+                <div class="reception-list" id="reception-list">
+                    <div class="reception-item" onclick="selectReception('pickup')">
+                        Самовывоз
+                    </div>
+                    <div class="reception-item" onclick="selectReception('delivery')">
+                        Доставка
+                    </div>
+                </div>
+
+                <div class="product-cards-holder"></div>
+            </div>
+            
+            <div class="basket-grid_right-side">
+                <div class="basket-card_make-order">
+                    <div class="first-row">
+                        <p><span id="selected-count">0</span> товаров</p>
+                        <p><span id="price-changing">0</span>₽</p>
+                    </div>
+
+                    <div class="second-row">
+                        <p>Итого</p>
+                        <h5><span id="total-sum">0</span>₽</h5>
+                    </div>
+
+                    <div class="basket-button">
+                        <button id="order-btn" onclick="Order()" disabled>Оформить заказ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="footer_service-list">
+                <div class="first-column">
+                    <h3>Каталог</h3>
+                    <a href="#">Товары для собак</a>
+                    <a href="#">Товары для кошек</a>
+                    <a href="#">Товары для рыб</a>
+                    <a href="#">Товары для грызунов</a>
+                    <a href="#">Товары для птиц</a>
+                </div>
+
+                <div class="second-column">
+                    <h3>Покупателям</h3>
+                    <a href="#">Акции</a>
+                    <a href="#">Бонусная программа</a>
+                    <a href="#">Возврат товара</a>
+                </div>
+
+                <div class="third-column">
+                    <h3>Компания</h3>
+                    <a href="#">О нас</a>
+                    <a href="#">Магазины</a>
+                    <a href="#">Франшиза</a>
+                </div>
+
+                <div class="fourth-column">
+                    <h3>8-800-555-55-35</h3>
+                    <a href="#" class="extra-a">Связаться с нами</a>
+                    <p>Горячая линия 9:00-21:00 МСК</p>
+                    <p>Доставка осуществляется 10:00-22:00 МСК</p>
+
+                    <h3 class="extra-h3">Мы в соцсетях</h3>
+                    <div class="icons">
+                        <img src="../img/basket-footer-vk.svg"><img src="../img/basket-footer-tg.svg"><img src="../img/basket-footer-inst.svg">
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer_service-extras">
+                <p>Лицензия: ЛО34-434324-3427893274 от 27.01.2026г.</p>
+                <h6>@2026 Зоомагазин ActiveBobic</h6>
+            </div>
+        </footer>
+    </main>
+    
+    <script src="../JS/script.js"></script>
+</body>
+
+</html>
