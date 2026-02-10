@@ -1,2 +1,2 @@
 
-https://misoriaa.github.io/ActiveBobik/
+https://misoriaa.github.io/ActiveBobik/main_page/main.html
