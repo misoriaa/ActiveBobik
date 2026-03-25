@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NatureBite — Профиль</title>
+    <title>NatureBite — Регистрация</title>
 
     <link rel="icon" href="../h-f-img/favicon.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
-    <link rel="stylesheet" href="./profile.css">
+    <link rel="stylesheet" href="./registr.css">
 </head>
 
 <body>
@@ -38,7 +38,7 @@
                         <img src="../h-f-img/cart.svg" alt="Корзина">
                     </a>
                     <a href="../profile/profile.html" class="user-icon">
-                        <img src="../h-f-img/profile_spec.svg" alt="Профиль">
+                        <img src="../h-f-img/profile.svg" alt="Профиль">
                     </a>
                     <div id="internal"><a href="../registration/register.html" class="jost-extrabold navbar-user">Регистрация</a></div>
                 </div>
@@ -48,34 +48,37 @@
 
 
     <main>
-        <div class="profile-container">
-            <div class="profile-card">
-                <h2 class="title jost-semibold">Профиль</h2>
-                <div class="divider"></div>
+        <div class="register-container">
+            <div class="register-card">
+                <form method="POST" class="register-form">
 
-                <div class="imgprof"><img src="./img/profile.png" alt=""></div>
-                
-                <div class="data-group">
-                    <label>Имя</label>
-                    <h3 class="user-data jost-medium">Name</h3>
-                </div>
+                    <h2 class="form-title jost-semibold">Регистрация</h2>
+                    <div class="divider"></div>
 
-                <div class="data-group">
-                    <label>Электронная почта</label>
-                    <h3 class="user-data jost-medium">example@mail.com</h3>
-                </div>
+                    <div class="imgprof"><img src="./img/profile.png" alt=""></div>
+                    
+                    <div class="form-group">
+                        <label for="name">Имя</label>
+                        <input type="text" id="name" placeholder="Введите имя" required>
+                    </div>
 
-                <div class="data-group">
-                    <label>Телефон</label>
-                    <h3 class="user-data jost-medium">+7 (123) 456-78-90</h3>
-                </div>
+                    <div class="form-group">
+                        <label for="email">Электронная почта</label>
+                        <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+                    </div>
 
-                <div class="data-group">
-                    <label>Дата рождения</label>
-                    <h3 class="user-data jost-medium">01.01.2000</h3>
-                </div>
+                    <div class="form-group">
+                        <label for="phone">Телефон</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="birthdate">Дата рождения</label>
+                        <input type="date" id="birthdate" name="birthdate">
+                    </div>
 
-                <button type="button" class="edit-btn jost-semibold">Изменить данные</button>
+                    <button type="submit" class="submit-btn jost-semibold">Зарегистрироваться</button>
+                </form>
             </div>
         </div>
     </main>
