@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+}
+
+body {
+    background: #F6F6F6;
+    font-family: "Jost", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.jost-thin {
+    font-weight: 100;
+}
+
+.jost-extralight {
+    font-weight: 200;
+}
+
+.jost-light {
+    font-weight: 300;
+}
+
+.jost-regular {
+    font-weight: 400;
+}
+
+.jost-medium {
+    font-weight: 500;
+}
+
+.jost-semibold {
+    font-weight: 600;
+}
+
+.jost-bold {
+    font-weight: 700;
+}
+
+.jost-extrabold {
+    font-weight: 800;
+}
+
+.jost-black {
+    font-weight: 900;
+}
+
+.jost-italic {
+    font-weight: 500;
+    font-style: italic;
+}
+
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.navbar {
+    background-color: #DCFB73;
+    box-shadow: 0 11px 32px rgba(69, 72, 109, 0.25);
+    padding: 15px 0;
+    width: 100%;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 50px;
+    height: auto;
+}
+
+.logo-link {
+    color: #3D571F;
+    font-size: 24px;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.nav-link {
+    color: #3D571F;
+    font-weight: 600;
+    padding: 8px 15px;
+    transition: all 0.3s;
+    border-radius: 25px;
+}
+
+.nav-link:hover {
+    color: #5da130;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.nav-link.active {
+    background: #5da130;
+    color: white;
+}
+
+.user-actions {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.user-icon {
+    display: flex;
+    align-items: center;
+    transition: transform 0.2s;
+}
+
+.user-icon:hover {
+    transform: scale(1.1);
+}
+
+.user-icon img {
+    width: 24px;
+    height: 24px;
+}
+
+.navbar-user {
+    color: #3D571F;
+    background-color: rgba(255, 255, 255, 0.3);
+    ;
+    font-size: 20px;
+    padding: 2px 10px;
+    border-radius: 25px;
+}
+
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto;
+}
+
+.profile-card {
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+    padding: 40px;
+}
+
+.title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.divider {
+    width: 80px;
+    height: 4px;
+    background: #5da130;
+    margin: 0 auto 30px;
+    border-radius: 2px;
+}
+
+.imgprof {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.data-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.edit-btn {
+    width: 100%;
+    background: #5da130;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 10px;
+}
+
+.edit-btn:hover {
+    background: #4a8a27;
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(93, 161, 48, 0.3);
+}
+
+
+
+.footer-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #DCFB73;
+    gap: 30vh;
+    min-height: 36vh;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    color: #3D571F;
+}
+
+.tel_num {
+    font-size: 28px;
+}
+
+.social_media {
+    display: flex;
+    gap: 2vh;
+}
+
+.social_media .icon {
+    display: flex;
+    gap: 3vh;
+    width: 4vh;
+    transition: transform 0.2s;
+}
+
+.social_media .icon:hover {
+    transform: scale(1.1);
+}
+
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 16px;
+    }
+
+    .navbar {
+        padding: 12px 0;
+    }
+
+    .logo-link {
+        font-size: 20px;
+    }
+
+    .nav-menu {
+        gap: 10px;
+    }
+
+    .nav-link {
+        font-size: 13px;
+        padding: 6px 10px;
+    }
+
+    .user-icon img {
+        width: 22px;
+        height: 22px;
+    }
+
+    .navbar-user {
+        font-size: 16px;
+        padding: 2px 8px;
+    }
+
+    .profile-container {
+        margin: 60px auto 40px;
+    }
+
+    .profile-card {
+        padding: 24px 16px;
+        max-width: 100%;
+        border-radius: 12px;
+    }
+
+    .title {
+        font-size: 1.8rem;
+    }
+
+    .divider {
+        margin-bottom: 24px;
+    }
+
+    .imgprof img {
+        width: 120px;
+        height: 120px;
+    }
+
+    .data-group label {
+        font-size: 0.95rem;
+    }
+
+    .user-data {
+        font-size: 1.1rem;
+    }
+
+    .edit-btn {
+        padding: 14px;
+        font-size: 1rem;
+    }
+
+    .footer-container {
+        flex-direction: column;
+        gap: 40px;
+        padding: 40px 16px;
+        min-height: auto;
+        text-align: center;
+    }
+
+    .column {
+        gap: 12px;
+    }
+
+    .tel_num {
+        font-size: 24px;
+    }
+
+    .social_media {
+        justify-content: center;
+        gap: 24px;
+    }
+
+    .social_media .icon {
+        width: 36px;
+    }
+
+    .address {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 900px) {
+    .nav-container {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        gap: 16px;
+    }
+
+    .nav-menu {
+        gap: 12px;
+    }
+
+    .nav-link {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .profile-container {
+        margin: 80px auto;
+    }
+
+    .profile-card {
+        padding: 32px 24px;
+        max-width: 500px;
+    }
+
+    .title {
+        font-size: 2rem;
+    }
+
+    .imgprof img {
+        width: 140px;
+        height: 140px;
+    }
+}
