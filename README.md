@@ -1,3 +1,3 @@
 #NatureBite
 
-https://misoriaa.github.io/main/index.html
+https://misoriaa.github.io/ActivBobik/main/index.html
