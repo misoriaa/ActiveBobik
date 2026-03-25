@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NatureBite — Корзина</title>
+
+    <link rel="icon" href="../h-f-img/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./cart.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container nav-container">
+                <div class="logo">
+                    <img src="../h-f-img/favicon.ico" class="logo-img" alt="NatureBite">
+                    <a href="../main/index.html" class="logo-link jost-black">NatureBite</a>
+                </div>
+
+                <ul class="nav-menu">
+                    <li><a href="../delivery/delivery.html" class="nav-link jost-medium">О доставке</a></li>
+                    <li><a href="../menu/menu.html" class="nav-link jost-medium">Меню на сегодня</a></li>
+                    <li><a href="../calculator/calculator_ccpf.html" class="nav-link jost-medium">Расчет калорий</a>
+                    </li>
+                </ul>
+
+                <div class="user-actions">
+                    <a href="../like/like_recipes.html" class="user-icon">
+                        <img src="../h-f-img/like.svg" alt="Избранное">
+                    </a>
+                    <a href="../cart/cart.html" class="user-icon">
+                        <img src="../h-f-img/cart_spec.svg" alt="Корзина">
+                    </a>
+                    <a href="../profile/profile.html" class="user-icon">
+                        <img src="../h-f-img/profile.svg" alt="Профиль">
+                    </a>
+                    <div id="internal"><a href="../registration/register.html"
+                            class="jost-extrabold navbar-user">Регистрация</a></div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container-menu">
+            <h1 class="page-title jost-extrabold">Корзина</h1>
+            <div class="title-underline"></div>
+
+            <div class="date-order">
+                <div class="date-dishes">
+                    <h2 class="date-text jost-semibold">Блюда на сегодня</h2>
+                </div>
+
+                <div class="btna">
+                    <button class="order_btn jost-semibold">Заказать</button>
+                </div>
+            </div>
+
+            <div class="dishes_block">
+                <div class="card_dish">
+                    <img class="dish-card_img" src="./img/konvert.jpg" alt="">
+                    <p class="dish-card_desc">Конвертик с творогом, зеленью и курицей</p>
+                    <div class="bottom-card_desc">
+                        <p class="dish_kind jost-light">Завтрак</p>
+                    </div>
+                </div>
+
+                <div class="card_dish">
+                    <img class="dish-card_img" src="./img/konvert.jpg" alt="">
+                    <p class="dish-card_desc">Конвертик с творогом, зеленью и курицей</p>
+                    <div class="bottom-card_desc">
+                        <p class="dish_kind jost-light">Завтрак</p>
+                    </div>
+                </div>
+
+                <div class="card_dish">
+                    <img class="dish-card_img" src="./img/konvert.jpg" alt="">
+                    <p class="dish-card_desc">Конвертик с творогом, зеленью и курицей</p>
+                    <div class="bottom-card_desc">
+                        <p class="dish_kind jost-light">Завтрак</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stat_sum">
+                <div class="stats-box">
+                    <div class="stats-item">
+                        <span class="stats-value jost-medium">3</span>
+                        <span class="stats-label jost-regular">блюда</span>
+                    </div>
+
+                    <div class="stats-divider"></div>
+
+                    <div class="stats-item">
+                        <span class="stats-value jost-medium">1134</span>
+                        <span class="stats-label jost-regular">ккал</span>
+                    </div>
+
+                    <div class="stats-divider"></div>
+
+                    <div class="stats-item">
+                        <span class="stats-value jost-medium">82</span>
+                        <span class="stats-label jost-regular">белки</span>
+                    </div>
+
+                    <div class="stats-divider"></div>
+
+                    <div class="stats-item">
+                        <span class="stats-value jost-medium">26</span>
+                        <span class="stats-label jost-regular">жиры</span>
+                    </div>
+
+                    <div class="stats-divider"></div>
+
+                    <div class="stats-item">
+                        <span class="stats-value jost-medium">139</span>
+                        <span class="stats-label jost-regular">углеводы</span>
+                    </div>
+                </div>
+
+                <div class="sum">
+                    <p class="sum_text jost-regular">Сумма заказа <span class="jost-bold">3 300</span> руб.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-menu">
+            <div class="date-order">
+                <div class="date-dishes">
+                    <h2 class="date-text jost-semibold">Блюда на завтра</h2>
+                </div>
+
+                <div class="btna">
+                    <button class="order_btn jost-semibold">Заказать</button>
+                </div>
+            </div>
+
+            <div class="dishes_block">
+                <div class="card_dish">
+                    <img class="dish-card_img" src="../img/konvert.jpg" alt="">
+                    <p class="dish-card_desc">Конвертик с творогом, зеленью и курицей</p>
+                    <div class="bottom-card_desc">
+                        <p class="dish_kind jost-light">Завтрак</p>
+                    </div>
+                </div>
+
+                <div class="card_dish">
+                    <img class="dish-card_img" src="./img/konvert.jpg" alt="">
+                    <p class="dish-card_desc">Конвертик с творогом, зеленью и курицей</p>
+                    <div class="bottom-card_desc">
+                        <p class="dish_kind jost-light">Завтрак</p>
+                    </div>
+                </div>
+
+                <div class="card_dish">
+                    <img class="dish-card_img" src="./img/konvert.jpg" alt="">
+                    <p class="dish-card_desc">Конвертик с творогом, зеленью и курицей</p>
+                    <div class="bottom-card_desc">
+                        <p class="dish_kind jost-light">Завтрак</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="stat_sum">
+                <div class="stats-box">
+                    <div class="stats-item">
+                        <span class="stats-value jost-medium">3</span>
+                        <span class="stats-label jost-regular">блюда</span>
+                    </div>
+
+                    <div class="stats-divider"></div>
+
+                    <div class="stats-item">
+                        <span class="stats-value jost-medium">1134</span>
+                        <span class="stats-label jost-regular">ккал</span>
+                    </div>
+
+                    <div class="stats-divider"></div>
+
+                    <div class="stats-item">
+                        <span class="stats-value jost-medium">82</span>
+                        <span class="stats-label jost-regular">белки</span>
+                    </div>
+
+                    <div class="stats-divider"></div>
+
+                    <div class="stats-item">
+                        <span class="stats-value jost-medium">26</span>
+                        <span class="stats-label jost-regular">жиры</span>
+                    </div>
+
+                    <div class="stats-divider"></div>
+
+                    <div class="stats-item">
+                        <span class="stats-value jost-medium">139</span>
+                        <span class="stats-label jost-regular">углеводы</span>
+                    </div>
+                </div>
+
+                <div class="sum">
+                    <p class="sum_text jost-regular">Сумма заказа <span class="jost-bold">3 300</span> руб.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="column">
+                <div class="logo">
+                    <img src="../h-f-img/logo.svg" class="logo-img" alt="NatureBite">
+                    <a href="../main/index.html" class="logo-link jost-black">NatureBite</a>
+                </div>
+                <a class="tel_num jost-black">+7 (495) 165-44-48</a>
+                <p class="work_time jost-light">Ежедневно: с 09-00 до 21-00</p>
+            </div>
+
+            <div class="column">
+                <p class="social jost-bold">Мы в соцсетях:</p>
+                <div class="social_media">
+                    <img src="../h-f-img/telegram.svg" class="icon" alt="telegram">
+                    <img src="../h-f-img/whatsapp.svg" class="icon" alt="whatsapp">
+                </div>
+                <p class="address jost-light">105318, Россия, г Москва, Мироновская улица, д.33с1</p>
+            </div>
+        </div>
+    </footer>
+    <script src="../JS/recepies.js"></script>
+    <script src="../JS/cart.js"></script>
+</body>
+
+</html>
