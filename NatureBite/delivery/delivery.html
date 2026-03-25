@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NatureBite — Доставка</title>
+
+    <link rel="icon" href="../h-f-img/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./delivery.css">
+
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="container nav-container">
+                <div class="logo">
+                    <img src="../h-f-img/favicon.ico" class="logo-img" alt="NatureBite">
+                    <a href="../main/index.html" class="logo-link jost-black">NatureBite</a>
+                </div>
+
+                <ul class="nav-menu">
+                    <li><a href="../delivery/delivery.html" class="nav-link jost-medium active">О доставке</a></li>
+                    <li><a href="../menu/menu.html" class="nav-link jost-medium">Меню на сегодня</a></li>
+                    <li><a href="../calculator/calculator_ccpf.html" class="nav-link jost-medium">Расчет калорий</a>
+                    </li>
+                </ul>
+
+                <div class="user-actions">
+                    <a href="../like/like_recipes.html" class="user-icon">
+                        <img src="../h-f-img/like.svg" alt="Избранное">
+                    </a>
+                    <a href="../cart/cart.html" class="user-icon">
+                        <img src="../h-f-img/cart.svg" alt="Корзина">
+                    </a>
+                    <a href="../profile/profile.html" class="user-icon">
+                        <img src="../h-f-img/profile.svg" alt="Профиль">
+                    </a>
+                    <div id="internal">
+                        <a href="../registration/register.html" class="jost-extrabold navbar-user">Регистрация</a>
+                    </div>
+                </div>
+
+                <div class="burger-menu">
+                    <img src="../h-f-img/menu.svg" alt="Меню" class="burger-icon">
+                </div>
+
+                <div class="mobile-menu">
+                    <div class="mobile-menu-header">
+                        <div class="close-menu">
+                            <span>&times;</span>
+                        </div>
+                    </div>
+                    <ul class="mobile-nav-menu">
+                        <li><a href="../delivery/delivery.html" class="mobile-nav-link jost-medium">О доставке</a></li>
+                        <li><a href="../menu/menu.html" class="mobile-nav-link jost-medium">Меню на сегодня</a></li>
+                        <li><a href="../calculator/calculator_ccpf.html" class="mobile-nav-link jost-medium">Расчет
+                                калорий</a></li>
+                        <li class="mobile-divider"></li>
+                        <li><a href="../like/like_recipes.html" class="mobile-nav-link jost-medium">Избранное</a></li>
+                        <li><a href="../cart/cart.html" class="mobile-nav-link jost-medium">Корзина</a></li>
+                        <li><a href="../profile/profile.html" class="mobile-nav-link jost-medium">Профиль</a></li>
+                        <li><a href="../registration/register.html" class="mobile-nav-link jost-medium">Регистрация</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="overlay"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="delivery-content">
+            <h1 class="page-title jost-extrabold">Доставка</h1>
+            <div class="title-underline"></div>
+
+            <div class="description_block">
+                <div class="woman-delivery">
+                    <img class="woman_img" src="./img/delivery-woman.png" alt="">
+                </div>
+                <div class="description-paragraph">
+                    <p class="description-text jost-regular">Мы создали наш сервис, не только, чтобы кормить Вас вкусной
+                        и полезной едой, но и для того, чтобы экономить Ваше время.</p>
+                    <p class="description-text jost-regular">Поэтому к процессу доставки отнеслись со всей серьезностью.
+                    </p>
+                    <p class="description-text jost-regular">У нас своя курьерская служба, именно поэтому, мы можем
+                        предложить Вам гибкие условия доставки.</p>
+                    <p class="description-text jost-regular"><span>Мы осуществляем доставку рационов ежедневно.</span>
+                    </p>
+                </div>
+            </div>
+            <div class="map_block">
+                <div class="map-text_col">
+                    <div class="green_lable">
+                        <p class="green_lable-text jost-regular">Зона бесплатной доставки</p>
+                    </div>
+
+                    <p class="desc jost-regular">По Москве и ближайшему Подмосковью в зеленой зоне доставляем:</p>
+
+                    <p class="desc jost-semibold">Бесплатно с 20:00 до 01:00</p>
+                    <p class="desc jost-regular">Вечером курьер доставляет сумку-холодильник вам в руки. Более точный
+                        временной интервал обсуждается с операторами.</p>
+
+                    <p class="desc jost-semibold">Бесконтактно с 20:00 до 06:00</p>
+                    <p class="desc jost-regular">Без встречи с курьером. В этом случае ваша сумка-холодильник будет
+                        ждать вас под утро в любом удобном для вас месте. В момент доставки мы отправляем вам
+                        СМС-сообщение.</p>
+
+                    <p class="desc jost-semibold">Утром с 06:00 до 12:00</p>
+                    <p class="desc jost-regular">Доставка доступна в удобном для вас 2-х часовом интервале с 06:00 до
+                        12:00.</p>
+
+                    <div class="red_lable">
+                        <p class="red_lable-text jost-regular">Зона платной доставки</p>
+                    </div>
+
+                    <p class="desc jost-regular">В оранжевой зоне доплата составляет 250 ₽ за каждую доставку.</p>
+                </div>
+
+                <div id="js-delivery-map" class="js-delivery-map"></div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="column">
+                <div class="logo">
+                    <img src="../h-f-img/logo.svg" class="logo-img" alt="NatureBite">
+                    <a href="../main/index.html" class="logo-link jost-black">NatureBite</a>
+                </div>
+                <a class="tel_num jost-black">+7 (495) 165-44-48</a>
+                <p class="work_time jost-light">Ежедневно: с 09-00 до 21-00</p>
+            </div>
+
+            <div class="column">
+                <p class="social jost-bold">Мы в соцсетях:</p>
+                <div class="social_media">
+                    <img src="../h-f-img/telegram.svg" class="icon" alt="telegram">
+                    <img src="../h-f-img/whatsapp.svg" class="icon" alt="whatsapp">
+                </div>
+                <p class="address jost-light">105318, Россия, г Москва, Мироновская улица, д.33с1</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../JS/main.js"></script>
+    <script>
+        ymaps.ready(init);
+
+        function init() {
+
+            const myMap = new ymaps.Map('js-delivery-map', {
+                center: [55.76, 37.64],
+                zoom: 10,
+                controls: []
+            });
+
+            const zoomControl = new ymaps.control.ZoomControl({
+                options: {
+                    size: 'large',
+                    float: 'none',
+                    position: {
+                        top: 108,
+                        left: 10
+                    }
+                }
+            });
+
+            myMap.controls.add(zoomControl);
+
+            // Бесплатная зона (внутренний полигон)
+            const greenZoneCoordinates = [
+                [55.95, 37.3],
+                [55.95, 37.9],
+                [55.5, 38.0],
+                [55.5, 37.3],
+                [55.95, 37.3]
+            ];
+
+            const greenZone = new ymaps.Polygon(
+                [greenZoneCoordinates],
+                {
+                    hintContent: '🚚 Зона бесплатной доставки',
+                    balloonContent: 'Бесплатная доставка'
+                },
+                {
+                    fillColor: 'rgba(124,252,0,0.35)',
+                    strokeColor: '#3D571F',
+                    strokeWidth: 3,
+                    zIndex: 200
+                }
+            );
+
+            // Платная зона с вырезом бесплатной
+            const redOuterCoordinates = [
+                [56.2, 37.0],
+                [56.3, 38.0],
+                [55.8, 38.5],
+                [55.3, 38.0],
+                [55.3, 37.0],
+                [55.8, 36.8],
+                [56.2, 37.0]
+            ];
+
+            const redZone = new ymaps.Polygon(
+                [
+                    redOuterCoordinates,   // внешний контур
+                    greenZoneCoordinates   // внутренний вырез
+                ],
+                {
+                    hintContent: '💰 Зона платной доставки (+250 ₽)',
+                    balloonContent: 'Доплата 250 ₽ за доставку'
+                },
+                {
+                    fillColor: 'rgba(255,68,68,0.25)',
+                    strokeColor: '#CC0000',
+                    strokeWidth: 3,
+                    zIndex: 100
+                }
+            );
+
+            myMap.geoObjects
+                .add(redZone)
+                .add(greenZone);
+
+            myMap.setBounds(myMap.geoObjects.getBounds(), {
+                checkZoomRange: true,
+                zoomMargin: 40
+            });
+        }
+    </script>
+</body>
+
+</html>

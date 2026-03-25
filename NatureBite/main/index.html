@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NatureBite</title>
+    <link rel="icon" href="../h-f-img/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <script src="../JS/main.js"></script>
+    <header>
+        <nav class="navbar">
+            <div class="container nav-container">
+                <div class="logo">
+                    <img src="../h-f-img/favicon.ico" class="logo-img" alt="NatureBite">
+                    <a href="../main/index.html" class="logo-link jost-black">NatureBite</a>
+                </div>
+
+                <ul class="nav-menu">
+                    <li><a href="../delivery/delivery.html" class="nav-link jost-medium">О доставке</a></li>
+                    <li><a href="../menu/menu.html" class="nav-link jost-medium">Меню на сегодня</a></li>
+                    <li><a href="../calculator/calculator_ccpf.html" class="nav-link jost-medium">Расчет калорий</a>
+                    </li>
+                </ul>
+
+                <div class="user-actions">
+                    <a href="../like/like_recipes.html" class="user-icon">
+                        <img src="../h-f-img/like.svg" alt="Избранное">
+                    </a>
+                    <a href="../cart/cart.html" class="user-icon">
+                        <img src="../h-f-img/cart.svg" alt="Корзина">
+                    </a>
+                    <a href="../profile/profile.html" class="user-icon">
+                        <img src="../h-f-img/profile.svg" alt="Профиль">
+                    </a>
+                    <div id="internal">
+                        <a href="../registration/register.html" class="jost-extrabold navbar-user">Регистрация</a>
+                    </div>
+                </div>
+
+                <div class="burger-menu">
+                    <img src="../h-f-img/menu.svg" alt="Меню" class="burger-icon">
+                </div>
+
+
+                <div class="mobile-menu">
+                    <div class="mobile-menu-header">
+                        <div class="close-menu">
+                            <span>&times;</span>
+                        </div>
+                    </div>
+                    <ul class="mobile-nav-menu">
+                        <li><a href="../delivery/delivery.html" class="mobile-nav-link jost-medium">О доставке</a></li>
+                        <li><a href="../menu/menu.html" class="mobile-nav-link jost-medium">Меню на сегодня</a></li>
+                        <li><a href="../calculator/calculator_ccpf.html" class="mobile-nav-link jost-medium">Расчет
+                                калорий</a></li>
+                        <li class="mobile-divider"></li>
+                        <li><a href="../like/like_recipes.html" class="mobile-nav-link jost-medium">Избранное</a></li>
+                        <li><a href="../cart/cart.html" class="mobile-nav-link jost-medium">Корзина</a></li>
+                        <li><a href="../profile/profile.html" class="mobile-nav-link jost-medium">Профиль</a></li>
+                        <li><a href="../registration/register.html" class="mobile-nav-link jost-medium">Регистрация</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="overlay"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="main-content">
+            <div class="top_card">
+                <div class="col">
+                    <h1 class="top_title jost-regular">Вкусно питаться — просто</h1>
+                    <p class="top_desc jost-regular">Добро пожаловать на сайт доставки здоровой еды! Насладитесь свежими
+                        блюдами, полезными ингредиентами и удобным сервисом. Начните заботиться о себе уже сегодня!</p>
+                    <a class="menu-btn jost-medium" href="../menu/menu.html">Посмотреть меню на сегодня</a>
+                </div>
+                <img class="top_card-img" src="./img/mainpic.jpg" alt="">
+            </div>
+
+            <div class="reasons">
+                <div class="reasons_title jost-regular">3 причины выбрать нас</div>
+                <div class="reasons_cards">
+                    <div class="reason_card1">
+                        <p class="card_title jost-medium">Готовое питание по цене продуктовой корзины</p>
+                        <ul class="card_list">
+                            <li class="card_list_row">
+                                <p class="card_list_item jost-regular">экономия вашего времен</p>
+                            </li>
+                            <li class="card_list_row">
+                                <p class="card_list_item jost-regular">разнообразное питание каждый день</p>
+                            </li>
+                        </ul>
+                        <img src="./img/reason1.svg" alt="">
+                    </div>
+
+                    <div class="reason_card2">
+                        <p class="card_title jost-medium">Быстрая доставка</p>
+                        <ul class="card_list">
+                            <li class="card_list_row">
+                                <p class="card_list_item jost-regular">доставка от <span class="jost-medium">30 минут по
+                                        Москве и области</span></p>
+                            </li>
+                            <li class="card_list_row">
+                                <p class="card_list_item jost-regular">лекго оформить заказ и выбрать подходящее время
+                                </p>
+                            </li>
+                        </ul>
+                        <img src="./img/reason2.svg" alt="">
+                    </div>
+
+                    <div class="reason_card3">
+                        <p class="card_title jost-medium">Свежие продукты</p>
+                        <ul class="card_list">
+                            <li class="card_list_row">
+                                <p class="card_list_item jost-regular">работаем только с проверенными поставщиками
+                                    свежих овощей, фруктов и мяса</p>
+                            </li>
+                        </ul>
+                        <img src="./img/reason3.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="questions">
+                <div class="question-title jost-regular">Часто задаваемые вопросы</div>
+
+                <div class="question-block">
+                    <h3 class="block-title jost-regular">Как и где готовится моя еда?</h3>
+                    <p class="block-text jost-regular">
+                        Варим, тушим, запекаем, а также готовим на пару, гриле и по технологии су-вид. Мы тщательно
+                        следим
+                        за качеством продуктов, оно проверяется трижды: у поставщика, при принятии на производство
+                        и в процессе
+                        готовки.
+                    </p>
+                </div>
+
+                <div class="question-block">
+                    <h3 class="block-title jost-regular">Производство точно безопасное?</h3>
+                    <p class="block-text jost-regular">
+                        Все блюда готовятся на современном производстве, сертифицированном по международной системе
+                        ХАССП. Это
+                        более жесткие, чем ГОСТы, требования. Первоначально они разрабатывались для производства пищи
+                        для NASA.
+                        Все помещения и оборудование моют два раза в сутки, дважды в неделю проводят очистку с полной
+                        остановкой
+                        процессов производства.
+                    </p>
+                </div>
+
+                <div class="question-block">
+                    <h3 class="block-title jost-regular">Используете ли вы добавки, усилители вкуса?</h3>
+                    <p class="block-text jost-regular">
+                        Нет, только стандартные специи: соль, перец, паприка, куркума и подобные.
+                    </p>
+                </div>
+
+                <div class="question-block">
+                    <h3 class="block-title jost-regular">А если у меня аллергия?</h3>
+                    <p class="block-text jost-regular">
+                        В наших блюдах могут присутствовать распространенные аллергены, такие как орехи, цитрусовые,
+                        яйца. Для
+                        уточнения состава меню, пожалуйста, обращайтесь к нашим менеджерам.
+                    </p>
+                </div>
+
+                <div class="question-block">
+                    <h3 class="block-title jost-regular">Какой срок годности у блюд?</h3>
+                    <p class="block-text jost-regular">
+                        Срок годности - от 2 до 4 дней, точная информация на этикетке каждого конкретного блюда. Еда
+                        остается свежей
+                        долго, потому что мы запечатываем коробочки без кислорода. Вместо него под пленкой углекислый
+                        газ.
+                        Он не дает бактериям размножаться, и еде портиться.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="column">
+                <div class="logo">
+                    <img src="../h-f-img/logo.svg" class="logo-img" alt="NatureBite">
+                    <a href="../main/index.html" class="logo-link jost-black">NatureBite</a>
+                </div>
+                <a class="tel_num jost-black">+7 (495) 165-44-48</a>
+                <p class="work_time jost-light">Ежедневно: с 09-00 до 21-00</p>
+            </div>
+
+            <div class="column">
+                <p class="social jost-bold">Мы в соцсетях:</p>
+                <div class="social_media">
+                    <img src="../h-f-img/telegram.svg" class="icon" alt="telegram">
+                    <img src="../h-f-img/whatsapp.svg" class="icon" alt="whatsapp">
+                </div>
+                <p class="address jost-light">105318, Россия, г Москва, Мироновская улица, д.33с1</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
